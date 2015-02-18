@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Wolf Hunter v1.0</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Wolf Hunter v1.0&rdquo; Documentation by &ldquo;David Brind&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Wolf Hunter&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 27/10/2014<br>
+					By: David Brind<br>
+					Email: <a href="mailto:dave@davidbrind.co.uk">dave@davidbrind.co.uk</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my HTML Game. Wolf Hunter</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#quickstart">Quick Start</a></li>
+			<li><a href="#htmlStructure">Game Description</a></li>
+			<li><a href="#framework">Framework</a></li>
+			<li><a href="#cssFiles">Game Library Items</a></li>
+			<li><a href="#javascript">Customisable Features</a></li>
+			<li><a href="#tools">Useful Tools</a></li>
+		
+			
+		
+		</ol>
+		
+		<hr>
+		<h3 id="quickstart"><strong>A) Quick Start</strong> - <a href="#toc">top</a></h3>
+		<p>Upload the folder wolfhunter onto a server, and browse to it!
+For example, if you have a "games" directory on your site, and upload the "wolfhunter" folder there, you'd play it at:
+http://www.example.com/games/wolfhunter</p>
+		
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>B) Game Description</strong> - <a href="#toc">top</a></h3>
+		<p>'Wolf Hunter' The hunter becomes the hunted in this take on 'whack a mole'. Load and reload your shotgun and touch/click the hunters as they emerge from behind the cover. The blue hunter takes one shot and the red hunter takes two shots to kill. They could appear from behind any cover and the games speed will gradually increase to a chaotic crescendo, the aim is to get the maximum score before the game ends. <strong>Be careful not to hit the Wolf</strong>. The wolves can only take one hit and will rapidly  deplete your score.</p>
+		
+		<hr>
+		<h3 id="framework"><strong>C) Framework</strong> - <a href="#toc">top</a></h3>
+		<p>Wolf Hunter uses the <a href="http://phaser.io/" target="_blank"/>PHASER</a> HTML5 Framework</p>
+				<p>PHASER documentation : <a href="http://docs.phaser.io" target="_blank">http://docs.phaser.io</a> PHASER examples <a href="http://examples.phaser.io/" target="_blank">http://examples.phaser.io</a></p>
+				<h4>Phaser Framework</h4>
+				<p>All Phaser files related to the framework are located within /js</p>
+				<ul>
+					<li>phaser.js</li>
+				</ul>
+				<h4>Game Files</h4>
+				<p>All files specific to the Game are located within /src</p>
+				<ul>
+					<li>Boot.js</li>
+					<ul><li>Prepares initial Preloader images, Global variables </li></ul>
+					<li>Preloader.js</li>
+					<ul><li>Preloads all game assets and starts MainMenu.js on loaded</li></ul>
+					<li>MainMenu.js</li>
+					<ul><li>Presents the Main Menu Screen</li></ul>
+					<li>Game.js</li>
+					<ul><li>Main game</li></ul>
+				</ul>
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>D) Game Library Items</strong> - <a href="#toc">top</a></h3>
+
+		<h3>Audio</h3>
+		<p><em>/audio</em> this folder contains all the sound fx's.  Audio files have been provided in .ogg and .mp3 to provide compatibility with Desktop, Android(.ogg) and Apple(.mp3). </p>
+		
+		<h4>GAME IMAGES</h4>
+		<p><em>/images/</em> folder provides all the imges for the game including: the game,preloader and menu background, orientation indicator, preloader,spritesheets and character artwork </p>
+		
+		<hr>
+		
+		<h3 id="javascript"><strong>E) Customisable Features</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The graphics, sound fx's and text can all be customised as desired.</p>
+		<p>Customising the game is a simple process of creating your custom image or sound and making sure the original name and location are preserved.</p>
+		
+		<h4>Character animations</h4>
+		<p>The character animations apply to the blue,red hunter and the wolf and have been created with Texturepacker (file included).</p>
+		<p>The blue and red hunter in play animations consists of 7 images: blue = hunter0001.png - hunter0007.png red = hunter20001.png - hunter20007.png</p>
+		<p>Wolf animation contains 5 images: wolf0001.png - wolf0005.png</p>
+		
+		
+		
+		<h4>All  Other Images</h4>
+		<p>The look of the whole game can be customised to suit your requirements</p>
+		<p>All the images can be customised by replacing the original image with your custom image. The height x width sizes must remain the same. </p>
+		<hr>
+		<h3 id="tools"><strong>F) Useful Tools</strong> - <a href="#toc">top</a></h3>
+				<p>Here is a list of useful tools, used to create ANARKEY. Each link provides a further link to tutorials.</p>
+				<ul>
+					<li><a href="http://www.phaser.io" target="_blank">Phaser Game Engine</a></li>
+					<ul><li>Main game development engine</li></ul>
+					<li><a href="https://www.codeandweb.com/texturepacker" target="_blank">Texture Packer</a></li>
+					<ul><li>Used to create in-game spritesheets</li></ul>
+					<li><a href="http://www.bfxr.net/" target="_blank">www.bfxr.net</a></li>
+					<ul><li>Audio creation (.wav)</li></ul>
+					<li><a href="http://www.media.io/" target="_blank">www.media.io</a></li>
+					<ul><li>wav to .ogg and .mp3 conversion</li></ul>
+			
+				</ul>
+		
+		
+		<p>Once again, thank you so much for purchasing Wolf Hunter. As I said at the beginning, I'd be glad to help you if you have any questions relating to this Game. No guarantees, but I'll do my best to assist.</p> 
+		
+		<p class="append-bottom alt large"><strong>David Brind</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
